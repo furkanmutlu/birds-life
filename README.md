@@ -26,6 +26,10 @@
     ```sh
     https://github.com/furkanmutlu/birds-life.git
     ```
+2. **Running**
+
+  You can simply use a live server extention or your browser.
+
 ## 🧐 What's inside?
 
     .
