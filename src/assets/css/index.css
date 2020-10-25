@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'agency fb';
+    background: url('../images/birds.png') no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    position: relative;
+    padding-top: 2vh;
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.logo {
+    padding: 20px;
+    flex: 0 0 25%;
+    background: #1F2F35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2;
+    text-align: end;
+    color: #28BC9C;
+
+}
+
+.logo span {
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1;
+    color: whitesmoke;
+}
+
+.menu-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding-top: 50px;
+}
+
+.menu-links ul {
+    width: 100%;
+}
+
+.menu-links ul li {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 25px 10px 10px;
+    color: #1F2F35;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu-links ul li:hover {
+    background: #1F2F35;
+    color: whitesmoke;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    right: 180px;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #1F2F35;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 130px;
+}
+
+.watchnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background:#1F2F35;
+    padding: 20px 120px 20px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.watchnow span {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid whitesmoke;
+    padding-bottom: 5px;
+}
+
+.watchnow i {
+    background: #28BC9C;
+    border: 2px solid white;
+    padding: 15px 15px 15px 20px;
+    border-radius: 50%;
+}
+
+.fa-play {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.media {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.media ul li {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+    color: #494949;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.media ul li a:visited {
+    color: inherit;
+}
+
+
+.media ul li:hover,
+.media ul li a:hover {
+    color: whitesmoke;
+    background: #1F2F35;
+}
+
+.ellipse-container {
+    width: 608px;
+    height: 608px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.ellipse {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.ellipse.thin {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: #494949;
+    opacity: .5;
+    border-style: dashed;
+}
+
+.ellipse.thick {
+    width: 93%;
+    height: 93%;
+    border-width: 10px;
+    border-color: transparent;
+    transform: rotate(-45deg);
+    top: 12px;
+    left: 12px;
+}
+
+.ellipse.yellow {
+    width: 93%;
+    height: 93%;
+    border-width: 10px;
+    border-color:#28BC9C transparent;
+    transform: rotate(-45deg);
+    top: 12px;
+    left: 12px;
+    animation: ellipseRotate 15s ease-in-out infinite;
+}
+
+@keyframes ellipseRotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+.circle1,
+.circle2 {
+    font-family: 'Poppins', sans-serif;
+    border-style: dashed;
+    width: 64px;
+    height: 64px;
+    border-width: 1px;
+    border-color: #494949;;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle1:hover,
+.circle2:hover {
+    cursor: pointer;
+    background: #1F2F35;
+}
+
+.circle1 {
+    top: 10%;
+    left: 30%;
+}
+
+.circle2 {
+    top: 65%;
+    right: 50%;
+}
+
+.circle1::before,
+.circle1::after,
+.circle2::before,
+.circle2::after {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle1::before,
+.circle2::before {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    z-index: 1;
+}
+
+.circle1::after,
+.circle2::after {
+    width: 40px;
+    height: 40px;
+    background:#28BC9C;
+}
+
+.circle1 span,
+.circle2 span {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    font-size: 14px;
+}
+
+.circle1 span {
+    top: -50px;
+}
+
+.circle2 span {
+    top: 70px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background:#28BC9C;
+    top: 0%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+
+.overlay span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1010px) {
+  .nav {
+    background-color: #1F2F35;
+  }
+
+  .menu-links ul li {
+    color: whitesmoke;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+
+    .menu-links ul li:hover {
+        background: whitesmoke;
+        color:  #1F2F35;
+    }
+
+    .circle1 {
+        left: 15%;
+    }
+
+    .circle2 {
+        left: 15%;
+    }
+
+    .watchnow {
+        top: 75%;
+    }
+
+}
+
+@media screen and (max-width: 615px) {
+    .ellipse-container {
+        display: none;
+    }
+
+    .circle1 {
+    display: none;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    .watchnow {
+        top: 75%;
+        padding: 20px 45px 20px 20px;
+    }
+
+    .text {
+        top: 20%;
+        right: 25%;
+    }
+
+    .text .title {
+        font-size: 70px;
+    }
+}

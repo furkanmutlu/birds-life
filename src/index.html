@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is some side project made and designed by Furkan Mutlu. I used vanilla javascript and gsap for animations.">
+    <meta name="keywords" content="furkan mutlu, side project, gsap, javascript, developer">
+    <meta name="author" content="Furkan Mutlu">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Birds Life</title>
+</head>
+<body onload="handleNavOnload()" onresize="handleNavOnResize()">
+    <div class="overlay">
+        <h1>Wild</h1>
+        <h1>Birds</h1>
+        <span>snow life</span>
+    </div>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <h1>
+                    <span>wild</span>
+                    <span>birds</span>
+                    <br>
+                    snow life
+                </h1>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li>home</li>
+                    <li>bird life</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+        <div onclick="toggleNavVisibility()" class="hamburger-icon">
+            <img src="./assets/images/bars-solid.svg" alt="hamburger menu">
+        </div>
+    </div>
+
+    <div class="text">
+        <p>Lorem, ipsum dolor sit amet elit. <br> Libero, magni ex maxime cum autem.</p>
+        <div class="title">birds</div>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=7v6QXZWylpI&ab_channel=Balu-RelaxingNaturein4K" target="_blank" rel="noopener">
+        <div class="watchnow">
+            <i class="fa fa-play"></i>
+            <span>watch now!</span>
+        </div>
+    </a>
+    <div class="media">
+        <ul>
+            <li>
+                <a href="https://github.com/furkanmutlu" target="_blank"
+        rel="noopener">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/furkanmutluu" target="_blank"
+        rel="noopener">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/furkan-mutlu/" target="_blank"
+        rel="noopener">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ellipse-container">
+        <div class="ellipse thin"></div>
+        <div class="ellipse thick"></div>
+        <div class="ellipse yellow"></div>
+    </div>
+
+    <div class="circles">
+        <div class="circle1"><span>Maecenas purus at</span></div>
+        <div class="circle2"><span>Fringilla Maecenas</span></div>
+    </div>
+
+    <script src="./js/gsap.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
