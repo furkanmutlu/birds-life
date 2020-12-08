@@ -4,7 +4,7 @@
   <a href="https://greensock.com/">
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" height="60">
   </a>
-  +
+  + 
   <img src="https://hackernoon.com/drafts/ux832eqm.png" height="60">
 </p>
 <h1 align="center">
